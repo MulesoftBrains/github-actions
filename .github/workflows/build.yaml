@@ -67,7 +67,7 @@ jobs:
          -Dapp.runtime="4.4.0" \
          -Dusername="$USERNAME" \
          -Dpassword="$PASSWORD" \
-         -Dcloudhub.application.name=$artifactName \
+         -Dcloudhub.application.name="github-actions" \
          -Denvironment="Sandbox" \
          -Dregion="us-east-2" \
          -Dworkers=1 \
