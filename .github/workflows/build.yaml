@@ -63,4 +63,12 @@ jobs:
         mvn deploy -DmuleDeploy \
          -Dmule.artifact=$artifactName \
          -Danypoint.username="$USERNAME" \
-         -Danypoint.password="$PASSWORD"
+         -Danypoint.password="$PASSWORD" \
+         -Dapp.runtime="4.4.0" \
+         -Dusername="$USERNAME" \
+         -Dpassword="$PASSWORD" \
+         -Dcloudhub.application.name=$artifactName \
+         -Denvironment="Sandbox" \
+         -Dregion="us-east-2" \
+         -Dworkers=1 \
+         -DworkerType=MICRO \
