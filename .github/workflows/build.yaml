@@ -59,6 +59,8 @@ jobs:
         USERNAME: ${{ secrets.anypoint_platform_username }}
         PASSWORD: ${{ secrets.anypoint_platform_password }}
         KEY: ${{ secrets.decryption_key}}
+        CLIENT_ID: ${{ secrets.decryption_client_id }}
+        CLIENT_SECRET: ${{ secrets.decryption_client_secret }}
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn deploy -DmuleDeploy \
@@ -73,4 +75,6 @@ jobs:
          -Dregion="us-east-2" \
          -Dworkers=1 \
          -DworkerType=MICRO \
-         -Ddecryption.key="$KEY"
+         -Ddecryption.key="$KEY" \
+         -Ddecryption_client_id="$CLIENT_ID" \
+         -Ddecryption_client_secret="$CLIENT_SECRET"
