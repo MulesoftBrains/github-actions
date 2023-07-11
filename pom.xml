@@ -49,8 +49,8 @@
 						<workerType>${workerType}</workerType>
 						<properties>
 							<secure.key>${decryption.key}</secure.key>
-							<anypoint.platform.client_id>${decryption.client_id}</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>${decryption.client_secret}</anypoint.platform.client_secret>
+							<anypoint.platform.client_id>${decryption_client_id}</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>${decryption_client_secret}</anypoint.platform.client_secret>
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
