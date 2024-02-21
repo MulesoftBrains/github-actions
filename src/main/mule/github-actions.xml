@@ -20,7 +20,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	"responded data":"Hello from cloudhub! " ++ p('secure::encrypted.myData')
+	"responded data":"Hello from cloudhub! Prashant " ++ p('secure::encrypted.myData')
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
